@@ -81,7 +81,9 @@ const MobileAdPage: React.FC = () => {
               <AnyReactPlayer
                   url={VIDEO_URL}
                   playing={true}
-                  muted={true}
+                  muted={false}
+                  volume={1}
+                  playsinline={true}
                   controls={true}
                   width="100%"
                   height="100%"
@@ -99,7 +101,7 @@ const MobileAdPage: React.FC = () => {
         
         {/* CTA Buttons Section */}
         <section className="w-full py-6 pt-0 pb-2 px-4 flex flex-col items-center gap-4 -mt-2">
-           <img onClick={handleCtaClick} loading="lazy" src='https://uylwgmvnlnnkkvjqirhx.supabase.co/storage/v1/object/public/products/ketoburnerus/BOTON%20ESPECIAL%20WS%2040.png' alt="HABLA CON UN ASESOR POR WHATSAPP APROVECHA LAS OFERTAS" className="w-full max-w-lg mx-auto animate-fadeInUp animation-fill-backwards animate-pulse-slow cursor-pointer"/>
+           <img onClick={handleCtaClick} loading="lazy" src='https://uylwgmvnlnnkkvjqirhx.supabase.co/storage/v1/object/public/products/ketoburnerus/BOTON%20ESPECIAL%20WS%2040.png' alt="HABLA CON UN ASESOR POR WHATSAPP APROVECHA LAS OFERTAS" className="w-full max-w-lg mx-auto animate-fadeInUp animation-fill-backwards animate-shake cursor-pointer"/>
           
         </section>
         

@@ -53,19 +53,9 @@ const MobileAdPage: React.FC = () => {
   }, []);
 
   const handleCtaClick = () => {
-    // 1. Seleccionar el asesor actual de forma secuencial
-    const selectedAdvisor = whatsappAdvisors[currentAdvisorIndex];
-
-    // 2. Actualizar el índice para el próximo clic, en un ciclo
-    setCurrentAdvisorIndex((prevIndex) => (prevIndex + 1) % whatsappAdvisors.length);
-
-    // 3. Crear el mensaje personalizado con el nombre del asesor
-    const message = `Hola ${selectedAdvisor.name}, me interesa perder peso, por favor me gustaría que me asesoren y saber cuál sería el tratamiento para mi.`;
-    const encodedMessage = encodeURIComponent(message);
-
-    // 4. Construir y abrir la URL de WhatsApp
-    const whatsappUrl = `https://wa.me/${selectedAdvisor.number}?text=${encodedMessage}`;
-    window.open(whatsappUrl, '_blank');
+    //1. CLICK EN LINK DE WHATSAPP
+    const walink = 'https://wa.link/ventasketoburner' ;
+    window.open(walink, '_blank')
   };
 
 

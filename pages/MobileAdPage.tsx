@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import { PlayIcon } from '../components/icons/PlayIcon';
 import { WavyDivider } from '../components/ui/WavyDivider';
 import { EyeIcon } from '../components/icons/EyeIcon';
+import { WhatsAppIcon } from '../components/icons/WhatsAppIcon';
 
 // URLs de assets para replicar el diseño
 const GITHUB_ASSETS_URL = 'https://raw.githubusercontent.com/anthemsk8er/revoreitor-health-hub/main/public';
@@ -99,10 +100,22 @@ const MobileAdPage: React.FC = () => {
           </span>
         </div>
         
-        {/* CTA Buttons Section */}
-        <section className="w-full py-6 pt-0 pb-2 px-4 flex flex-col items-center gap-4 -mt-2">
-           <img onClick={handleCtaClick} loading="lazy" src='https://uylwgmvnlnnkkvjqirhx.supabase.co/storage/v1/object/public/products/ketoburnerus/BOTON%20ESPECIAL%20WS%2040.png' alt="HABLA CON UN ASESOR POR WHATSAPP APROVECHA LAS OFERTAS" className="w-full max-w-lg mx-auto animate-fadeInUp animation-fill-backwards animate-shake cursor-pointer"/>
+        {/* CTA Button Section CTA*/}
           
+        <section className="w-full py-6 pt-2 pb-2 px-4 flex flex-col items-center gap-4">
+           <button
+             onClick={handleCtaClick}
+             className="w-full max-w-lg mx-auto flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-black font-bold py-4 px-4 rounded-lg shadow-lg animate-pulse-cta"
+           >
+             <WhatsAppIcon className="w-9 h-9 flex-shrink-0 text-white" />
+             <div className="w-px ml-2 mr-2 h-8 bg-white/70 self-center"></div>
+
+             <div className="text-left text-sm leading-tight">
+               <span className="block">Hablar con un asesor por whatsapp</span>
+               <span className="block font-normal">Aprovecha el Contraentrega</span>
+               <span className="block font-normal text-xs">Recibe tu pedido entre 24 a 72 hrs</span>
+             </div>
+           </button>
         </section>
         
         {/* Social Proof & Product Section */}

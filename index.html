@@ -40,6 +40,15 @@
       }
     }
 
+    @keyframes pulse-cta {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.08);
+      }
+    }
+
     @keyframes shake {
       10%, 90% {
         transform: translate3d(-1px, 0, 0);
@@ -74,6 +83,10 @@
       animation: pulse 2.5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
     }
     
+    .animate-pulse-cta {
+      animation: pulse-cta 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
     .animate-shake {
       animation: shake 1s cubic-bezier(.36,.07,.19,.97) infinite;
     }

@@ -110,8 +110,8 @@ const MobileAdPage: React.FC = () => {
 
         {/* Header Section */}
         <section className="w-full py-8 pb-3 pt-4 px-2">
-          <h1 className="font-bebas text-5xl md:text-6xl text-white-900 tracking-narrow">
-            ¡ESTA VEZ SIN EXCUSAS!
+          <h1 className="font-bebas text-4xl md:text-6xl text-white-900 tracking-narrow">
+            ¿ESTÁS BUSCANDO PERDER PESO?
           </h1>
           <h2 className="font-bebas text-[1.3rem] md:text-2xl text-white-600 mt-2 tracking-narrow">
             ASESORÍAS SEMANALES PARA ACOMPAÑARTE EN TU MEJORÍA

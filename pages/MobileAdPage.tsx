@@ -61,13 +61,55 @@ const MobileAdPage: React.FC = () => {
 
 
   return (
-    <div className="relative min-h-screen bg-black text-white overflow-x-hidden">
+    <div className="relative min-h-screen text-white overflow-x-hidden bg-gradient-to-r from-indigo-950 via-indigo-600 to-violet-600">
 
       {/* Main Content */}
       <main className="relative z-10 flex flex-col items-center text-center">
         
+{/* Marquee Section */}
+        <section className="w-full bg-yellow-400 py-2 mt-0 overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {/* Content block 1 */}
+            <div className="flex-shrink-0 flex items-center">
+                <span className="text-black font-bold text-sm md:text-lg mx-4">
+                  🔥 PAGO CONTRAENTREGA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  ASESORÍA GRATUITA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  OFERTAS POR TIEMPO LIMITADO
+                </span>
+            </div>
+            {/* Content block 2 (for seamless loop) */}
+            <div className="flex-shrink-0 flex items-center" aria-hidden="true">
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  🔥 PAGO CONTRAENTREGA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  ASESORÍA GRATUITA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  OFERTAS POR TIEMPO LIMITADO
+                </span>
+            </div>
+          </div>
+        </section>
+
         {/* Header Section */}
-        <section className="w-full py-8 pb-3 pt-12 px-2">
+        <section className="w-full py-8 pb-3 pt-4 px-2">
           <h1 className="font-bebas text-5xl md:text-6xl text-white-900 tracking-narrow">
             ¡ESTA VEZ SIN EXCUSAS!
           </h1>
@@ -100,16 +142,15 @@ const MobileAdPage: React.FC = () => {
           </span>
         </div>
         
+        
+
         {/* CTA Button Section CTA*/}
-          
         <section className="w-full py-6 pt-2 pb-2 px-4 flex flex-col items-center gap-4">
            <button
              onClick={handleCtaClick}
-             className="w-full max-w-lg mx-auto flex items-center justify-center gap-3 bg-green-500 hover:bg-green-600 text-black font-bold py-4 px-4 rounded-lg shadow-lg animate-pulse-cta"
+             className="w-full max-w-lg mx-auto flex items-center justify-center gap-4 bg-green-500 hover:bg-green-600 text-black font-bold py-4 px-4 rounded-lg shadow-lg animate-pulse-cta"
            >
              <WhatsAppIcon className="w-9 h-9 flex-shrink-0 text-white" />
-             <div className="w-px ml-2 mr-2 h-8 bg-white/70 self-center"></div>
-
              <div className="text-left text-sm leading-tight">
                <span className="block">Hablar con un asesor por whatsapp</span>
                <span className="block font-normal">Aprovecha el Contraentrega</span>
@@ -119,7 +160,7 @@ const MobileAdPage: React.FC = () => {
         </section>
         
         {/* Social Proof & Product Section */}
-        <section className="relative w-full pb-4 px-4 flex flex-col items-center">
+        <section className="relative w-full pb-8 px-4 flex flex-col items-center">
             {/* Social Proof Carousel */}
             <div className="flex items-center gap-4 bg-zinc-800/80 p-3 rounded-xl mb-6 w-full max-w-sm">
                 <div className="flex-shrink-0">
@@ -136,9 +177,52 @@ const MobileAdPage: React.FC = () => {
            <img loading="lazy" src={PRODUCT_IMAGE_URL} alt="Productos Keto Burner con beneficios" className="w-full max-w-lg mx-auto" />
         </section>
         
+
+{/* Marquee Section 2*/}
+        <section className="w-full bg-yellow-400 py-2 mt-0 overflow-hidden">
+          <div className="flex animate-marquee whitespace-nowrap">
+            {/* Content block 1 */}
+            <div className="flex-shrink-0 flex items-center">
+                <span className="text-black font-bold text-sm md:text-lg mx-4">
+                  🔥 PAGO CONTRAENTREGA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  ASESORÍA GRATUITA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  OFERTAS POR TIEMPO LIMITADO
+                </span>
+            </div>
+            {/* Content block 2 (for seamless loop) */}
+            <div className="flex-shrink-0 flex items-center" aria-hidden="true">
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  🔥 PAGO CONTRAENTREGA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  ASESORÍA GRATUITA
+                </span>
+                <span className="text-purple-700 text-xl mx-4">
+                  •
+                </span>
+                <span className="text-black font-bold text-md md:text-lg mx-4">
+                  OFERTAS POR TIEMPO LIMITADO
+                </span>
+            </div>
+          </div>
+        </section>
+
+
         {/* Footer with Badges */}
-        <footer className="relative w-full bg-stone-100 pt-16 pb-8 px-4 text-center">
-            <WavyDivider />
+        <footer className="relative w-full bg-stone-100 pt-4 pb-8 px-4 text-center">
             <div className="flex justify-center items-center mb-3">
                 <img loading="lazy" src={`${KETO_ASSETS_URL}`} alt="Insignias de calidad" className="h-16 md:h-20"/>
             </div>
@@ -153,26 +237,26 @@ const MobileAdPage: React.FC = () => {
 
       {/* Promotional Modal */}
       {isModalOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 flex items-center justify-center p-4 animate-fadeInUp">
-          <div className="relative bg-zinc-800 rounded-2xl p-8 text-center text-white max-w-sm mx-auto shadow-2xl border border-purple-500">
+        <div className="fixed inset-0 bg-black bg-opacity-60 z-50 flex items-end">
+          <div className="relative bg-white rounded-t-2xl p-6 pt-8 w-full text-center text-zinc-900 shadow-2xl animate-slideInFromBottom">
             <button 
               onClick={() => setIsModalOpen(false)} 
-              className="absolute top-2 right-2 text-zinc-400 hover:text-white p-1"
+              className="absolute top-3 right-3 text-zinc-400 hover:text-zinc-800 p-1"
               aria-label="Cerrar modal"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
-            <h3 className="text-xl font-bebas text-purple-400 tracking-wide mb-4">
+            <h3 className="text-4xl sm:text-5xl font-bebas text-zinc-900 tracking-wide mb-4">
               ¡OFERTA EXCLUSIVA!
             </h3>
-            <p className="mb-6 text-zinc-200 text-base">
+            <p className="mb-8 text-zinc-600 text-lg">
               Obtén mejores descuentos en nuestro canal de WhatsApp.
             </p>
             <button
               onClick={() => setIsModalOpen(false)}
-              className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-4 rounded-lg transition-transform hover:scale-105 shadow-lg"
+              className="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-4 rounded-lg transition-transform hover:scale-105 shadow-lg text-lg"
             >
               Aprovechar los descuentos
             </button>

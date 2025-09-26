@@ -1,9 +1,9 @@
 import React from 'react';
-import MobileAdPage from './pages/MobileAdPage';
+import VideoLandingPage from './pages/VideoLandingPage';
 
 const App: React.FC = () => {
-  // Renderiza directamente MobileAdPage como la página principal.
-  return <MobileAdPage />;
+  // Renderiza directamente VideoLandingPage como la página principal.
+  return <VideoLandingPage />;
 };
 
 export default App;
